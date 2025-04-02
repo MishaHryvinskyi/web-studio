@@ -73,7 +73,7 @@
       <section class="section hero">
         <div class="container hero__wrapper">
           <h1 class="hero__title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button b-r js-button">Order Service</button>
+          <button type="button" class="button b-r js-hero-button">Order Service</button>
         </div>
        </section>
       <!-- ADVANTAGES -->
@@ -243,7 +243,7 @@
       <!-- PORTFOLIO -->
       <section class="section portfolio">
         <div class="container">
-          <h2 class="title">Our Portfolio</h2>
+          <h2 id="portfolio" class="title">Our Portfolio</h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
@@ -352,6 +352,33 @@
         </form>
       </div>
     </footer>
+    <!-- Modal -->
+     <div class="backdrop is-hidden">
+      <div class="modal b-r">
+        <h2>Leave your contacts and we will call you back</h2>
+        <form class="modal__form">
+          <label class="modal__label">Name
+            <input class="modal__input b-r" type="text">
+          </label>
+          <label class="modal__label">Phone
+            <input class="modal__input b-r" type="tel">
+          </label>
+          <label class="modal__label">Email
+            <input class="modal__input b-r" type="email">
+          </label>
+          <label class="modal__label">Comment
+            <textarea class="modal__text-area b-r" placeholder="Text input"></textarea>
+          </label>
+          <label class="modal__label"><input type="checkbox">I accept the terms and conditions of the Privacy Policy</label>
+          <button class="modal__send b-r">Send</button>
+        </form>
+        <button type="button" class="modal-close js-modal-close">
+          <svg>
+            <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+     </div>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
