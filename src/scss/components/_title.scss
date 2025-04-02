@@ -1,0 +1,21 @@
+@use "../utils/function" as fn;
+@use "../utils/variables";
+@use "sass:map";
+@use "sass:list";
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(40 / 36); 
+    letter-spacing: 0.72px;
+    margin-bottom: 72px;
+}
+
+.secondary-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: calc(24 / 20); 
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}

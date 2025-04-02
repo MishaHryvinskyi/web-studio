@@ -1,1 +1,14 @@
-@use "reset";
+@use "utils/index" as *;
+
+@use "./base/base";
+
+@use "./components/container";
+@use "./components/title";
+@use "./components/social-list";
+
+@use './layouts/header';
+@use "./layouts/hero";
+@use "./layouts/advantages";
+@use "./layouts/our-team";
+@use "./layouts/portfolio";
+@use "./layouts/footer";
