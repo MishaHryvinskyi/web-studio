@@ -40,3 +40,16 @@
   }
 })();
 const style = "";
+const headerNav = document.querySelector(".header__nav");
+function menuOpen() {
+  headerNav.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function menuClose() {
+  headerNav.classList.remove("open");
+  document.body.style.overflow = "";
+}
+const menuCloseBtn = document.querySelector(".header__button-close");
+const menuOpenBtn = document.querySelector(".js-menu-open");
+menuOpenBtn.addEventListener("click", menuOpen);
+menuCloseBtn.addEventListener("click", menuClose);
