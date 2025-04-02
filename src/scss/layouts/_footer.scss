@@ -1,0 +1,128 @@
+@use "../utils/function" as fn;
+@use "../utils/variables";
+@use "sass:map";
+@use "sass:list";
+
+
+.footer {
+    background-color: fn.get-color("dark");
+    color: fn.get-color("light");
+    text-align: center;
+}
+
+.logo.footer__logo {
+    display: block;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.footer__description {
+    text-align: start;
+}
+
+.footer__description-b,
+.footer__form-input {
+    margin-bottom: 16px;
+}
+
+.footer__description-b {
+    font-weight: 500;
+}
+
+.footer__form-input {
+    display: block;
+}
+
+.footer__form-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: fn.get-color("brand-primary");
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: fn.get-color("brand-hover");
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & > svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+}
+
+.footer__form-input {
+    text-align: start;
+    padding: 8px 16px;
+    border: 1px solid fn.get-color('white-bg');
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer__social-wrapper {
+    width: 208px;
+    margin-bottom: 72px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer__logo-wrapper {
+        margin-bottom: 72px;
+    }
+
+    .footer__social-wrapper {
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+
+    .footer__form-input {
+        width: 100%;
+    }
+
+    .footer__form-button {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+   .wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+   }
+
+   .footer__description-b {
+    text-align: start;
+   }
+
+   .logo.footer__logo {
+    text-align: start;
+   }
+
+   .footer__logo-wrapper {
+    width: 264px;
+   }
+
+   .footer__social-wrapper {
+    margin: 0 0 0 24px;
+}
+
+   .input-werapper {
+    display: flex;
+   }
+
+   .footer__form-input {
+        width: 264px;
+        margin-right: 24px;
+    }
+
+    .input-werapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1440px) {
+   
+}

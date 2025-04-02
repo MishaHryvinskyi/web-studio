@@ -1,0 +1,43 @@
+@use "../utils/function" as fn;
+@use "../utils/variables";
+@use "sass:map";
+@use "sass:list";
+
+.advantages__list {
+    display: grid;
+    gap: 72px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .advantages__list {
+        grid-template-columns: 1fr 1fr;
+        gap: 72px 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .advantages__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    .advantages__title::before {
+        content: "";
+        display: block;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        height: 112px;
+        background-color: fn.get-color('light');
+        border: 1px solid fn.get-color("subtle-text");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    @each $item in antenna, astronaut, clock, diagram {
+        .#{$item}-title::before {
+            background-image: url('/src/img/png/#{$item}.png');
+            background-size: 64px 64px;
+        }
+    }
+}
