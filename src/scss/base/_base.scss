@@ -20,3 +20,11 @@ img {
 .b-r {
     border-radius: 4px;
 }
+
+.m-b {
+    margin-bottom: 8px;
+}
+
+.text {
+    color: fn.get-color("text");
+}
