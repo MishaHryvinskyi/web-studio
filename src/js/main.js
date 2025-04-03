@@ -10,7 +10,7 @@ const backdrop = document.querySelector('.backdrop');
 
 menuOpenBtn.addEventListener('click',menuOpen);
 menuCloseBtn.addEventListener('click', menuClose);
+
 openModalBtn.addEventListener('click', openModal);
 closeModalBtn.addEventListener('click', closeModal);
-
 backdrop.addEventListener('click', onBackdropClick)

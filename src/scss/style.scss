@@ -3,7 +3,9 @@
 @use "./base/base";
 @use "./base/visually-hidden";
 
+@use "./components/logo";
 @use "./components/container";
+@use "./components/button";
 @use "./components/title";
 @use "./components/social-list";
 @use "./components/modal";

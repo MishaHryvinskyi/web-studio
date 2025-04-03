@@ -1,0 +1,34 @@
+@use "../utils/function" as fn;
+@use "../utils/variables";
+@use "sass:map";
+@use "sass:list";
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(21/18);
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+
+    &__accent {
+        color: fn.get-color("brand-primary");
+    }
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+    .logo {
+        padding: 16px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .logo {
+        margin-right: 120px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        margin-right: 76px;
+    }
+}

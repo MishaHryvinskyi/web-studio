@@ -19,23 +19,7 @@
     }
 } 
 
-.logo {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: calc(21/18);
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
-
-    &__accent {
-        color: fn.get-color("brand-primary");
-    }
-}
-
 @media (min-width: 320px) and (max-width:767px) {
-    .logo {
-        padding: 16px 0;
-    }
-
     .header {
         position: relative;
         display: flex;
@@ -188,10 +172,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-    .logo {
-        margin-right: 120px;
-    }
-
     .header__contacts {
         flex-direction: column;
        
@@ -202,10 +182,6 @@
 }
 
 @media (min-width: 1440px) {
-    .logo {
-        margin-right: 76px;
-    }
-
     .header__contacts {
         display: flex;
     

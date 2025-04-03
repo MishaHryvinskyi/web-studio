@@ -4,7 +4,6 @@ function menuOpen() {
     headerNav.classList.add('open');
     document.body.style.overflow = 'hidden';
 }
-   
   
 function menuClose(){
     headerNav.classList.remove('open');

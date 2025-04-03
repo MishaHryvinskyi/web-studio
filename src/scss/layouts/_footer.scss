@@ -32,33 +32,9 @@
 
 .footer__form-input {
     display: block;
-}
-
-.footer__form-button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 8px 24px;
-    background-color: fn.get-color("brand-primary");
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        background-color: fn.get-color("brand-hover");
-        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    & > svg {
-        width: 24px;
-        height: 24px;
-        margin-left: 16px;
-    }
-}
-
-.footer__form-input {
     text-align: start;
     padding: 8px 16px;
     border: 1px solid fn.get-color('white-bg');
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .footer__social-wrapper {
@@ -85,44 +61,58 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-   .wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
-   }
+@media (min-width: 768px)  {
+    .footer__wrapper {
+        display: flex;
+        justify-content: center;
+    }
 
-   .footer__description-b {
-    text-align: start;
-   }
-
-   .logo.footer__logo {
-    text-align: start;
-   }
-
-   .footer__logo-wrapper {
-    width: 264px;
-   }
-
-   .footer__social-wrapper {
-    margin: 0 0 0 24px;
-}
-
-   .input-werapper {
-    display: flex;
-   }
-
-   .footer__form-input {
+    .footer__logo-wrapper {
         width: 264px;
-        margin-right: 24px;
+    }
+
+    .footer__description-b,
+    .logo.footer__logo {
+        text-align: start;
+    }
+
+    .footer__social-wrapper {
+        width: 208px;
+        margin-bottom: 30px;
+    }
+
+    .footer__form-input {
+        width: 264px;
+        margin: 0 24px 0 0;
     }
 
     .input-werapper {
         display: flex;
-        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .footer__logo-wrapper {
+        margin-right: 24px;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer__form {
+        margin: 72px 50px 0 0;
     }
 }
 
 @media (min-width: 1440px) {
-   
+    .footer__social-wrapper {
+        margin: 0 80px 0 120px;
+    }
+
+   .footer__form {
+        display: flex;
+        flex-direction: column;
+    }
 }

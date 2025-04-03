@@ -1,11 +1,11 @@
 {
-  "name": "vite-template",
+  "name": "web-studio",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vite-template/",
+    "build": "vite build --base=/web-studio/",
     "preview": "vite preview",
     "watch": "npx vite build --watch"
   },
