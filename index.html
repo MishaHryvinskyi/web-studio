@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WebStudio effective solutions for your business. We create modern web design, marketing strategies, and technological solutions to help companies grow.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -287,7 +288,10 @@
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/banking-desktop-2x.jpg" alt="banking-app" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img class="portfolio__img" src="./src/img/portfolio/banking-desktop-2x.jpg" alt="banking-app" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Banking App </h3>
                   <p class="text">App</p>
@@ -296,7 +300,10 @@
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/paymant-desktop-2x.jpg" alt="paymant" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img src="./src/img/portfolio/paymant-desktop-2x.jpg" alt="paymant" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Cashless</h3>
                   <p class="text">Marketing</p>
@@ -305,7 +312,10 @@
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/meditation-desktop-2x.jpg" alt="meditation-app" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img src="./src/img/portfolio/meditation-desktop-2x.jpg" alt="meditation-app" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Meditation App</h3>
                   <p class="text">App</p>
@@ -314,7 +324,10 @@
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/taxi-service-desktop-2x.jpg" alt="taxi-service" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img src="./src/img/portfolio/taxi-service-desktop-2x.jpg" alt="taxi-service" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Taxi Service</h3>
                   <p class="text">Marketing</p>
@@ -323,7 +336,10 @@
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/iluminations-desktop-2x.jpg" alt="ilumination" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img src="./src/img/portfolio/iluminations-desktop-2x.jpg" alt="ilumination" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Screen Illustrations</h3>
                   <p class="text">Design</p>
@@ -332,7 +348,10 @@
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <img src="./src/img/portfolio/courses-desktop-2x.jpg" alt="courses" width="360">
+                <div class="portfolio__img-wrapper">
+                  <p class="portfolio__text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img src="./src/img/portfolio/courses-desktop-2x.jpg" alt="courses" width="360">
+                </div>
                 <div class="portfolio__description-wrapper">
                   <h3 class="secondary-title m-b">Online Courses</h3>
                   <p class="text">Marketing</p>
@@ -420,7 +439,7 @@
           <label class="modal__label"><input type="checkbox">I accept the terms and conditions of the Privacy Policy</label>
           <button class="modal__send b-r">Send</button>
         </form>
-        <button type="button" class="modal-close js-modal-close">
+        <button type="button" class="modal-close js-modal-close" aria-label="button-close-modal">
           <svg>
             <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
           </svg>
