@@ -1,6 +1,7 @@
 @use "utils/index" as *;
 
 @use "./base/base";
+@use "./base/visually-hidden";
 
 @use "./components/container";
 @use "./components/title";
