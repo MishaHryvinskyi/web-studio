@@ -13,7 +13,7 @@
   <body>
     <!-- HEADER -->
      <header class="header container">
-      <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
+      <a href="./index.html" class="logo" aria-label="logo"><span class="logo__accent">Web</span>Studio</a>
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item header-item">
@@ -37,34 +37,42 @@
           <li class="header__contacts-item header-item"><a href="tel:+110001111111" rel="noopener noreferrer">+11 (000) 111-11-11</a></li>
         </ul>
         <ul class="social-list header__social">
-          <li class="social-item"><a class="social-link" href="">
-            <svg class="social-svg">
-              <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a></li>
-          <li class="social-item"><a class="social-link" href="">
-            <svg class="social-svg">
-              <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a></li>
-          <li class="social-item"><a class="social-link" href="">
-            <svg class="social-svg">
-              <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a></li>
-          <li class="social-item"><a class="social-link" href="">
-            <svg class="social-svg">
-              <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a></li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+              <svg class="social-svg">
+                <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+              <svg class="social-svg">
+                <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+              <svg class="social-svg">
+                <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+              <svg class="social-svg">
+                <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <button class="header__button-close js-menu-close">
+        <button class="header__button-close js-menu-close" aria-label="button-close-menu">
           <svg>
             <use href="/vite-template/assets/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
       </nav>
-      <button class="header__button-open  js-menu-open">
+      <button class="header__button-open  js-menu-open" aria-label="button-open-menu">
         <svg>
           <use href="/vite-template/assets/symbol-defs.svg#icon-menu"></use>
         </svg>
@@ -72,7 +80,7 @@
      </header>
     <main>
        <!-- HERO -->
-      <section class="section hero">
+      <section class="hero">
         <div class="container hero__wrapper">
           <h1 class="hero__title">Effective Solutions for Your Business</h1>
           <button type="button" class="button b-r js-hero-button">Order Service</button>
@@ -81,36 +89,36 @@
       <!-- ADVANTAGES -->
        <section class="section advantages">
         <div class="container">
-          <!-- <h2>Advantages</h2> -->
+          <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="decorative-img"></div>
-              <h3 class="secondary-title advantages__title antenna-title">Strategy</h3>
-              <p>
+              <h3 class="advantages__title m-b antenna-title">Strategy</h3>
+              <p class="text">
                 Our goal is to identify the business
                 problem to walk away with the perfect and creative solution. 
               </p>
             </li>
             <li class="advantages__item">
               <div class="decorative-img"></div>
-              <h3 class="secondary-title advantages__title astronaut-title">Punctuality</h3>
-              <p>
+              <h3 class="advantages__title m-b astronaut-title">Punctuality</h3>
+              <p class="text">
                 Bring the key message to the brand's audience for the best
                 price within the shortest possible time.
               </p>
             </li>
             <li class="advantages__item">
               <div class="decorative-img"></div>
-              <h3 class="secondary-title advantages__title clock-title">Diligence</h3>
-              <p>
+              <h3 class="advantages__title m-b clock-title">Diligence</h3>
+              <p class="text">
                 Research and confirm brands with the
                 strongest digital growth opportunities and minimize risk.
               </p>
             </li>
             <li class="advantages__item">
               <div class="decorative-img"></div>
-              <h3 class="secondary-title advantages__title diagram-title">Technologies</h3>
-              <p>
+              <h3 class="advantages__title m-b diagram-title">Technologies</h3>
+              <p class="text">
                 Design practice focused on digital experiences.
                 We bring forth a deep passion for problem-solving.
               </p>
@@ -126,116 +134,148 @@
           <li class="our-team__item">
             <img src="/vite-template/assets/mark-desktop-2x.jpg" alt="mark">
             <div class="our-team__wrapper">
-              <h3 class="secondary-title">Mark Guerrero</h3>
-              <p>Product Designer</p>
-              <ul class="social-list">
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a></li>
+              <h3 class="secondary-title m-b">Mark Guerrero</h3>
+              <p class="text m-b">Product Designer</p>
+              <ul class="social-list m-b">
+                <li class="social-item">
+                  <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </li>
           <li class="our-team__item">
             <img src="/vite-template/assets/tom-desktop-2x.jpg" alt="tom">
             <div class="our-team__wrapper">
-              <h3 class="secondary-title">Tom Ford</h3>
-              <p>Frontend Developer</p>
-              <ul class="social-list">
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a></li>
+              <h3 class="secondary-title m-b">Tom Ford</h3>
+              <p class="text m-b">Frontend Developer</p>
+              <ul class="social-list m-b">
+                <li class="social-item">
+                  <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </li>
           <li class="our-team__item">
             <img src="/vite-template/assets/camila-desktop-2x.jpg" alt="camila">
             <div class="our-team__wrapper">
-              <h3 class="secondary-title">Camila Garcia</h3>
-              <p>Marketing</p>
-              <ul class="social-list">
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a></li>
+              <h3 class="secondary-title m-b">Camila Garcia</h3>
+              <p class="text m-b">Marketing</p>
+              <ul class="social-list m-b">
+                <li class="social-item">
+                  <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </li>
           <li class="our-team__item">
             <img src="/vite-template/assets/daniel-desktop-2x.jpg" alt="daniel">
             <div class="our-team__wrapper">
-              <h3 class="secondary-title">Daniel Wilson</h3>
-              <p>UI Designer</p>
-              <ul class="social-list">
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a></li>
-                <li class="social-item"><a class="social-link" href="">
-                  <svg class="social-svg">
-                    <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a></li>
+              <h3 class="secondary-title m-b">Daniel Wilson</h3>
+              <p class="text m-b">UI Designer</p>
+              <ul class="social-list m-b">
+                <li class="social-item">
+                  <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+                    <svg class="social-svg">
+                      <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </li>
@@ -251,8 +291,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/banking-desktop-2x.jpg" alt="banking-app" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Banking App </h3>
-                  <p>App</p>
+                  <h3 class="secondary-title m-b">Banking App </h3>
+                  <p class="text">App</p>
                 </div>
               </a>
             </li>
@@ -260,8 +300,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/paymant-desktop-2x.jpg" alt="paymant" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Cashless</h3>
-                  <p>Marketing</p>
+                  <h3 class="secondary-title m-b">Cashless</h3>
+                  <p class="text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -269,8 +309,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/meditation-desktop-2x.jpg" alt="meditation-app" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Meditation App</h3>
-                  <p>App</p>
+                  <h3 class="secondary-title m-b">Meditation App</h3>
+                  <p class="text">App</p>
                 </div>
               </a>
             </li>
@@ -278,8 +318,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/taxi-service-desktop-2x.jpg" alt="taxi-service" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Taxi Service</h3>
-                  <p>Marketing</p>
+                  <h3 class="secondary-title m-b">Taxi Service</h3>
+                  <p class="text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -287,8 +327,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/iluminations-desktop-2x.jpg" alt="ilumination" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Screen Illustrations</h3>
-                  <p>Design</p>
+                  <h3 class="secondary-title m-b">Screen Illustrations</h3>
+                  <p class="text">Design</p>
                 </div>
               </a>
             </li>
@@ -296,8 +336,8 @@
               <a class="portfolio__link" href="">
                 <img src="/vite-template/assets/courses-desktop-2x.jpg" alt="courses" width="360">
                 <div class="portfolio__description-wrapper">
-                  <h3 class="secondary-title">Online Courses</h3>
-                  <p>Marketing</p>
+                  <h3 class="secondary-title m-b">Online Courses</h3>
+                  <p class="text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -318,26 +358,34 @@
           <div class="footer__social-wrapper">
             <p class="footer__description-b">Social media</p>
             <ul class="social-list">
-              <li class="social-item"><a class="social-link" href="">
-                <svg class="social-svg">
-                  <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a></li>
-              <li class="social-item"><a class="social-link" href="">
-                <svg class="social-svg">
-                  <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a></li>
-              <li class="social-item"><a class="social-link" href="">
-                <svg class="social-svg">
-                  <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a></li>
-              <li class="social-item"><a class="social-link" href="">
-                <svg class="social-svg">
-                  <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a></li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram-link">
+                  <svg class="social-svg">
+                    <use href="/vite-template/assets/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter-link">
+                  <svg class="social-svg">
+                    <use href="/vite-template/assets/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook-link">
+                  <svg class="social-svg">
+                    <use href="/vite-template/assets/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin-link">
+                  <svg class="social-svg">
+                    <use href="/vite-template/assets/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
