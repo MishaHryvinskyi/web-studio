@@ -37,16 +37,32 @@
 
 .modal__input {
     width: 100%;
-    padding: 8px 16px;
+    height: 35px;
+    padding: 8px 38px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     margin-bottom: 8px;
+
+    &:focus-within {
+        border: 1px solid fn.get-color("brand-primary");
+    }
+}
+
+.modal__svg {
+    position: absolute;
+    bottom: -5px;
+    left: 14px;
 }
 
 .modal__label {
+    position: relative;
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.48px;
     color: fn.get-color("subtle-text");
+
+    &:focus-within > .modal__svg{
+        fill: fn.get-color("brand-primary");
+    }
 }
 
 .modal__text-area {
@@ -55,9 +71,39 @@
     padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     margin-bottom: 16px;
+
+    &:focus-within {
+        border: 1px solid fn.get-color("brand-primary");
+    }
+}
+
+.modal__label-agre {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > a{
+        color: fn.get-color("brand-primary");
+        text-decoration: underline;
+        margin-left: 4px;
+    }
+}
+
+.modal__agre {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: solid 1px fn.get-color("subtle-text");
+
+    &:checked {
+        background: url('/src/img/png/argea.png')center / contain no-repeat;
+        border: solid 1px fn.get-color("brand-primary");
+    }
 }
 
 .modal__send {
+    cursor: pointer;
     display: block;
     margin: 24px auto 0 auto;
     width: 169px;
@@ -66,6 +112,14 @@
     text-align: center;
     background-color: fn.get-color("brand-primary");
     color: fn.get-color("light");
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: fn.get-color("brand-hover");
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .modal-close {
@@ -80,10 +134,21 @@
     height: 24px;
     border-radius: 50%;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     & > svg {
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 8px;
         height: 8px;
+    }
+
+    &:hover > svg {
+        fill: fn.get-color("white-bg");
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+        background-color: fn.get-color("brand-primary");
+        transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
