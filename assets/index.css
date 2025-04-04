@@ -476,10 +476,10 @@ img {
   color: #4D5AE5;
 }
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
-  background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
-  background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-mobile-1x.jpg") center/cover no-repeat;
+  background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-1x.jpg") center/cover no-repeat;
+  background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-1x.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-1x.jpg") center/cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -915,10 +915,10 @@ img {
     margin-bottom: 12px;
   }
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url(/web-studio/assets/hero-bg-tablet-2x.jpg) center/cover no-repeat;
-    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-tablet-2x.jpg) center/cover no-repeat;
-    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-tablet-2x.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-tablet-2x.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-tablet-1x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-1x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-1x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-1x.jpg") center/cover no-repeat;
   }
   .hero__wrapper {
     padding: 112px 0;
@@ -970,10 +970,10 @@ img {
     margin-right: 40px;
   }
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url(/web-studio/assets/hero-bg-desktop-2x.jpg) center/cover no-repeat;
-    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-desktop-2x.jpg) center/cover no-repeat;
-    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-desktop-2x.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/web-studio/assets/hero-bg-desktop-2x.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-desktop-1x.webp") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-1x.webp") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-1x.webp") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-1x.webp") center/cover no-repeat;
   }
   .hero__wrapper {
     padding: 188px 0;
@@ -1046,5 +1046,59 @@ img {
        -moz-box-orient: vertical;
        -moz-box-direction: normal;
             flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-desktop-2x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-2x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-2x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-2x.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 3), (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min-resolution: 288dpi), screen and (min-width: 1440px) and (min-resolution: 3dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-desktop-3x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-3x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-3x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-desktop-3x.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-device-pixel-ratio: 3), (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1439px) and (min--moz-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 3dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-tablet-3x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-3x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-3x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-3x.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 2dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-tablet-2x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-2x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-2x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-tablet-2x.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx){
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 47, 66, 0.7)), to(rgba(46, 47, 66, 0.7))), url("/web-studio/assets/hero-bg-mobile-3x.jpg") center/cover no-repeat;
+    background: -webkit-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-3x.jpg") center/cover no-repeat;
+    background: -moz-linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-3x.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/web-studio/assets/hero-bg-mobile-3x.jpg") center/cover no-repeat;
   }
 }
