@@ -1,12 +1,23 @@
 @use "../utils/function" as fn;
-@use "../utils/variables";
+@use "../utils/variables" as var;
+@use "../utils/mixin" as m;
 @use "sass:map";
 @use "sass:list";
 
 .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url("/src/img/hero-bg-mobile-2x.jpg") center/cover no-repeat;
+    background: var.$bg-gradient, 
+    url("/src/img/hero-bg-mobile-1x.jpg") center / cover no-repeat;
     color: fn.get-color("white-bg");
+
+    @include m.retina(2) {
+        background: var.$bg-gradient, 
+        url("/src/img/hero-bg-mobile-2x.jpg") center / cover no-repeat;
+    }
+
+    @include m.retina(3) {
+        background: var.$bg-gradient, 
+        url("/src/img/hero-bg-mobile-3x.jpg") center / cover no-repeat;
+    }
 }  
 
 .hero__wrapper {
@@ -37,8 +48,18 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
     .hero {
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(/src/img/hero-bg-tablet-2x.jpg) center/cover no-repeat;
+        background: var.$bg-gradient, 
+        url("/src/img/hero-bg-tablet-1x.jpg") center / cover no-repeat;
+
+        @include m.retina(2) {
+            background: var.$bg-gradient, 
+            url("/src/img/hero-bg-tablet-2x.jpg") center / cover no-repeat;
+        }
+    
+        @include m.retina(3) {
+            background: var.$bg-gradient, 
+            url("/src/img/hero-bg-tablet-3x.jpg") center / cover no-repeat;
+        }
     } 
 
     .hero__wrapper {
@@ -52,8 +73,18 @@
 
 @media (min-width: 1440px) {
     .hero {
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(/src/img/hero-bg-desktop-2x.jpg) center/cover no-repeat;;
+        background: var.$bg-gradient, 
+        url("/src/img/webp/hero-bg-desktop-1x.webp") center / cover no-repeat;
+
+        @include m.retina(2) {
+            background: var.$bg-gradient, 
+            url("/src/img/hero-bg-desktop-2x.jpg") center / cover no-repeat;
+        }
+    
+        @include m.retina(3) {
+            background: var.$bg-gradient, 
+            url("/src/img/hero-bg-desktop-3x.jpg") center / cover no-repeat;
+        }
     }    
 
     .hero__wrapper {
